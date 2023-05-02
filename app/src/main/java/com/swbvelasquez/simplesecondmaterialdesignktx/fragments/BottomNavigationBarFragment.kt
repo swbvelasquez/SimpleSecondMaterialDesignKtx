@@ -1,5 +1,6 @@
 package com.swbvelasquez.simplesecondmaterialdesignktx.fragments
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +26,22 @@ class BottomNavigationBarFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentBottomNavigationBarBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        //Badge es la etiqueta que indica el numero de nuevas actualizaciones o notificaciones
+        binding.bnvMain.getOrCreateBadge(R.id.action_home)
+
+        binding.bnvMain.getOrCreateBadge(R.id.action_favorites).number = 21
+
+        binding.bnvMain.getOrCreateBadge(R.id.action_profile).apply {
+            number = 999
+            maxCharacterCount = 3 //Indica la cantidad maxima de caracteres a verse (si es 3 -> 99+)
+            backgroundColor = Color.CYAN // Color de etiqueta
+            badgeTextColor = Color.MAGENTA //Color de letra
+        }
     }
 
     companion object {
