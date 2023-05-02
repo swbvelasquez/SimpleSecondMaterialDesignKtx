@@ -5,7 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.swbvelasquez.simplesecondmaterialdesignktx.adapters.DataAdapter
 import com.swbvelasquez.simplesecondmaterialdesignktx.databinding.ActivityMainBinding
-import com.swbvelasquez.simplesecondmaterialdesignktx.databinding.ActivityScrollBinding
+import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.BottomNavigationBarFragment
+import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.ButtonFragment
 import com.swbvelasquez.simplesecondmaterialdesignktx.utils.Constants
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         dataAdapter.add(ButtonFragment.getData())
+        dataAdapter.add(BottomNavigationBarFragment.getData())
 
         binding.rvData.apply {
             adapter = dataAdapter
