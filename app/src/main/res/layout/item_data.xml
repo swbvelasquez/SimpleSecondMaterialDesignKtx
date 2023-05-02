@@ -8,16 +8,33 @@
     android:layout_marginTop="8dp"
     android:layout_marginHorizontal="8dp">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imvPhoto"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/item_dimen_height"/>
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        tools:text="Name"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvPhoto"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_dimen_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/black"
+            android:background="@drawable/background_item"
+            android:padding="@dimen/common_padding_min"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Name"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </com.google.android.material.card.MaterialCardView>

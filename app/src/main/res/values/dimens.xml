@@ -5,4 +5,5 @@
     <dimen name="item_dimen_height">128dp</dimen>
     <dimen name="common_padding_default">16dp</dimen>
     <dimen name="common_padding_nano">2dp</dimen>
+    <dimen name="common_padding_min">8dp</dimen>
 </resources>
