@@ -23,8 +23,10 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:helperText="@string/helper_comment_optional"
         android:layout_marginTop="@dimen/common_padding_default"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:hint="@string/status_filled_dense">
@@ -103,6 +105,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCapitalLetter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/common_padding_default"
@@ -111,9 +114,13 @@
         app:boxCornerRadiusBottomStart="@dimen/circle_radius"
         app:boxCornerRadiusTopStart="@dimen/circle_radius"
         app:boxCornerRadiusBottomEnd="@dimen/circle_radius"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_format_size"
+        app:endIconTint="@color/teal_700"
         android:hint="@string/hint_capital_letter">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCapitalLetter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"/>
