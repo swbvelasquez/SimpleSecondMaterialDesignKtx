@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.BottomNavigationBarFragment
 import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.ButtonFragment
+import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.SnackBarFragment
+import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.TextFieldFragment
 
 object Functions {
     fun setFragment(activity:AppCompatActivity,fragmentName:String,contentRes:Int){
@@ -23,6 +25,8 @@ object Functions {
         when(fragmentName){
             ButtonFragment.TAG -> fragment = ButtonFragment.newInstance()
             BottomNavigationBarFragment.TAG -> fragment = BottomNavigationBarFragment.newInstance()
+            SnackBarFragment.TAG -> fragment = SnackBarFragment.newInstance()
+            //TextFieldFragment.TAG -> fragment = TextFieldFragment.newInstance()
         }
 
         return fragment
