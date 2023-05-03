@@ -26,7 +26,7 @@ object Functions {
             ButtonFragment.TAG -> fragment = ButtonFragment.newInstance()
             BottomNavigationBarFragment.TAG -> fragment = BottomNavigationBarFragment.newInstance()
             SnackBarFragment.TAG -> fragment = SnackBarFragment.newInstance()
-            //TextFieldFragment.TAG -> fragment = TextFieldFragment.newInstance()
+            TextFieldFragment.TAG -> fragment = TextFieldFragment.newInstance()
         }
 
         return fragment
