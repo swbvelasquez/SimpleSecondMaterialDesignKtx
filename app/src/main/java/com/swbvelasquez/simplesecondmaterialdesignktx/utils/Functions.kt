@@ -2,10 +2,7 @@ package com.swbvelasquez.simplesecondmaterialdesignktx.utils
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.BottomNavigationBarFragment
-import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.ButtonFragment
-import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.SnackBarFragment
-import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.TextFieldFragment
+import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.*
 
 object Functions {
     fun setFragment(activity:AppCompatActivity,fragmentName:String,contentRes:Int){
@@ -27,6 +24,7 @@ object Functions {
             BottomNavigationBarFragment.TAG -> fragment = BottomNavigationBarFragment.newInstance()
             SnackBarFragment.TAG -> fragment = SnackBarFragment.newInstance()
             TextFieldFragment.TAG -> fragment = TextFieldFragment.newInstance()
+            FloatingActionButtonFragment.TAG -> fragment = FloatingActionButtonFragment.newInstance()
         }
 
         return fragment
