@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         dataAdapter.add(SnackBarFragment.getData())
         dataAdapter.add(TextFieldFragment.getData())
         dataAdapter.add(FloatingActionButtonFragment.getData())
+        dataAdapter.add(CheckboxFragment.getData())
 
         binding.rvData.apply {
             adapter = dataAdapter
