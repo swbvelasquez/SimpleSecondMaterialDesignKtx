@@ -26,6 +26,7 @@ object Functions {
             TextFieldFragment.TAG -> fragment = TextFieldFragment.newInstance()
             FloatingActionButtonFragment.TAG -> fragment = FloatingActionButtonFragment.newInstance()
             CheckboxFragment.TAG -> fragment = CheckboxFragment.newInstance()
+            CardFragment.TAG -> fragment = CardFragment.newInstance()
         }
 
         return fragment
