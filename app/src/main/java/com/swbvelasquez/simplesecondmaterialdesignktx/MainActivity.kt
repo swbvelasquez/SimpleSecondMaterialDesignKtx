@@ -7,6 +7,7 @@ import com.swbvelasquez.simplesecondmaterialdesignktx.adapters.DataAdapter
 import com.swbvelasquez.simplesecondmaterialdesignktx.databinding.ActivityMainBinding
 import com.swbvelasquez.simplesecondmaterialdesignktx.fragments.*
 import com.swbvelasquez.simplesecondmaterialdesignktx.utils.Constants
+import java.util.Collections
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -39,10 +40,13 @@ class MainActivity : AppCompatActivity() {
         dataAdapter.add(FloatingActionButtonFragment.getData())
         dataAdapter.add(CheckboxFragment.getData())
         dataAdapter.add(CardFragment.getData())
+        dataAdapter.add(MenuFragment.getData())
+        dataAdapter.reverse()
 
         binding.rvData.apply {
             adapter = dataAdapter
             setHasFixedSize(true)
         }
     }
+
 }

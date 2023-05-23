@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.swbvelasquez.simplesecondmaterialdesignktx.R
 import com.swbvelasquez.simplesecondmaterialdesignktx.adapters.viewholders.DataVH
 import com.swbvelasquez.simplesecondmaterialdesignktx.utils.Data
+import java.util.*
 
 class DataAdapter(
     private var dataList : MutableList<Data>,
@@ -28,5 +29,10 @@ class DataAdapter(
             dataList.add(data)
             notifyItemInserted(dataList.size-1)
         }
+    }
+
+    fun reverse(){
+        dataList.reverse()
+        notifyDataSetChanged()
     }
 }

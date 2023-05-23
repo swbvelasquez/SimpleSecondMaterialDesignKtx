@@ -1,6 +1,7 @@
 package com.swbvelasquez.simplesecondmaterialdesignktx
 
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -33,6 +34,11 @@ class StaticActivity : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
             title = fragmentName ?: "No Title"
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.bottom_nav_menu,menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
