@@ -56,4 +56,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="image_content_description">Hello blank fragment</string>
     <string name="menu_popup_menu">Popup Menu</string>
+    <string name="menu_hint_autocomplete">Autocomplete</string>
 </resources>

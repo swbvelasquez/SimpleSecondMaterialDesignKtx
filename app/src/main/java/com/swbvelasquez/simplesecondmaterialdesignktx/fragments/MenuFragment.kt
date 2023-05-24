@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.PopupMenu
 import com.swbvelasquez.simplesecondmaterialdesignktx.R
 import com.swbvelasquez.simplesecondmaterialdesignktx.databinding.FragmentCardBinding
@@ -35,6 +36,15 @@ class MenuFragment : Fragment() {
             popupMenu.menuInflater.inflate(R.menu.bottom_nav_menu,popupMenu.menu)
             popupMenu.show()
         }
+
+        val courses = listOf(
+                "Experto en firebase para android +MVP curso completo +30hrs",
+                "Material Design/Theming Profesional para Android",
+                "Kotlin 2020")
+        activity?.let {
+            binding.acvCourses.setAdapter(ArrayAdapter(it,R.layout.item_menu_dropdown,courses))
+        }
+
     }
 
     companion object {
