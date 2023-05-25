@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         dataAdapter.add(CheckboxFragment.getData())
         dataAdapter.add(CardFragment.getData())
         dataAdapter.add(MenuFragment.getData())
+        dataAdapter.add(AlertDialogFragment.getData())
         dataAdapter.reverse()
 
         binding.rvData.apply {

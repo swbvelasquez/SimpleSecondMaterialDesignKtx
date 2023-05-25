@@ -28,6 +28,7 @@ object Functions {
             CheckboxFragment.TAG -> fragment = CheckboxFragment.newInstance()
             CardFragment.TAG -> fragment = CardFragment.newInstance()
             MenuFragment.TAG -> fragment = MenuFragment.newInstance()
+            AlertDialogFragment.TAG -> fragment = AlertDialogFragment.newInstance()
         }
 
         return fragment
