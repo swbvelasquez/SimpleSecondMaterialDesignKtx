@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         dataAdapter.add(CardFragment.getData())
         dataAdapter.add(MenuFragment.getData())
         dataAdapter.add(AlertDialogFragment.getData())
+        dataAdapter.add(AppBarFragment.getData())
         dataAdapter.reverse()
 
         binding.rvData.apply {

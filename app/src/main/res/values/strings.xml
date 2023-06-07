@@ -57,4 +57,6 @@
     <string name="image_content_description">Hello blank fragment</string>
     <string name="menu_popup_menu">Popup Menu</string>
     <string name="menu_hint_autocomplete">Autocomplete</string>
+    <string name="app_bar_top">App Bar Top</string>
+    <string name="app_bar_bottom">App Bar Bottom</string>
 </resources>

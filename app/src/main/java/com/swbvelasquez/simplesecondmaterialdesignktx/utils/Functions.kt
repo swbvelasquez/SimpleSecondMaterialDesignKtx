@@ -29,6 +29,7 @@ object Functions {
             CardFragment.TAG -> fragment = CardFragment.newInstance()
             MenuFragment.TAG -> fragment = MenuFragment.newInstance()
             AlertDialogFragment.TAG -> fragment = AlertDialogFragment.newInstance()
+            AppBarFragment.TAG -> fragment = AppBarFragment.newInstance()
         }
 
         return fragment
