@@ -79,6 +79,13 @@ class AlertDialogFragment : Fragment() {
                         .show()
                 }
             }
+
+            btnDialogFullScreen.setOnClickListener {
+                activity?.let{
+                    val fragment = FullScreenDialogFragment.newInstance()
+                    fragment.show(it.supportFragmentManager,FullScreenDialogFragment.TAG)
+                }
+            }
         }
     }
 
