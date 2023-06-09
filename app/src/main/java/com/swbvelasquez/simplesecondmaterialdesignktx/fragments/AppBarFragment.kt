@@ -43,8 +43,8 @@ class AppBarFragment : Fragment() {
 
         binding.btnBottom.setOnClickListener {
             activity?.let {
-                val fragment = FullScreenDialogFragment.newInstance()
-                fragment.show(it.supportFragmentManager, FullScreenDialogFragment.TAG)
+                val fragment = AppBarBottomFragment.newInstance()
+                fragment.show(it.supportFragmentManager, AppBarBottomFragment.TAG)
             }
         }
     }

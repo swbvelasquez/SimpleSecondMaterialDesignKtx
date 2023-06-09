@@ -58,7 +58,6 @@ class AppBarTopFragment : DialogFragment() {
     companion object {
         const val TAG = "AppBarTopDialogFragment"
 
-
         @JvmStatic
         fun newInstance() =
             AppBarTopFragment().apply {
