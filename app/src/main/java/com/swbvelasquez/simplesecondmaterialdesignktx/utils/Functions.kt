@@ -30,6 +30,7 @@ object Functions {
             MenuFragment.TAG -> fragment = MenuFragment.newInstance()
             AlertDialogFragment.TAG -> fragment = AlertDialogFragment.newInstance()
             AppBarFragment.TAG -> fragment = AppBarFragment.newInstance()
+            PickerFragment.TAG -> fragment = PickerFragment.newInstance()
         }
 
         return fragment

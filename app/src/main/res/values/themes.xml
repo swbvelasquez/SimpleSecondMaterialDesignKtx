@@ -23,7 +23,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- android:windowAnimationStyle Permite cambiar la animacion del cierre y apertura del dialog-->
+
     <style name="AppTheme.FullScreenDialog" parent="ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen">
         <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+    </style>
+    <style name="AppTheme.FullScreenDialogPicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
+        <item name="android:windowIsFloating">false</item>
     </style>
 </resources>

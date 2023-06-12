@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
         dataAdapter.add(MenuFragment.getData())
         dataAdapter.add(AlertDialogFragment.getData())
         dataAdapter.add(AppBarFragment.getData())
+        dataAdapter.add(PickerFragment.getData())
         dataAdapter.reverse()
 
         binding.rvData.apply {

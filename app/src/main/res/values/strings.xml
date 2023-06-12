@@ -59,4 +59,8 @@
     <string name="menu_hint_autocomplete">Autocomplete</string>
     <string name="app_bar_top">App Bar Top</string>
     <string name="app_bar_bottom">App Bar Bottom</string>
+    <string name="dialog_picker_full_screen">Full Screen Dialog Picker</string>
+    <string name="dialog_picker">Dialog Picker</string>
+    <string name="picker_title">Seleccione una fecha</string>
+    <string name="dialog_negative">Negative button</string>
 </resources>
