@@ -11,7 +11,9 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+
+        <!-- shapeAppearanceSmallComponent afecta a la forma de como se ven los componentes pequeños como botones, iconos, fabs, chips, etc -->
+        <item name="shapeAppearanceSmallComponent">@style/shapeAppearance.MyTheme.SmallComponent</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -19,15 +21,16 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 
     <!-- android:windowAnimationStyle Permite cambiar la animacion del cierre y apertura del dialog-->
-
     <style name="AppTheme.FullScreenDialog" parent="ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen">
         <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
     </style>
+
+    <!-- android:windowIsFloating Permite indicar si se desea mostrar como ventana flotante o no-->
     <style name="AppTheme.FullScreenDialogPicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
         <item name="android:windowIsFloating">false</item>
     </style>

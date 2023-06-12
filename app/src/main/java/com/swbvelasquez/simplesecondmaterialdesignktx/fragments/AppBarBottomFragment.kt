@@ -9,10 +9,12 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import com.google.android.material.bottomappbar.BottomAppBar
+import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.snackbar.Snackbar
 import com.swbvelasquez.simplesecondmaterialdesignktx.R
 import com.swbvelasquez.simplesecondmaterialdesignktx.databinding.FragmentAppBarBottomBinding
 import com.swbvelasquez.simplesecondmaterialdesignktx.databinding.FragmentAppBarTopBinding
+import com.swbvelasquez.simplesecondmaterialdesignktx.utils.BottomAppBarCutCornersTopEdge
 
 
 class AppBarBottomFragment : DialogFragment() {
@@ -73,6 +75,21 @@ class AppBarBottomFragment : DialogFragment() {
                 .setAnchorView(binding.fabAdd) //Indica sobre quien se visualizara el snackbar
                 .show()
         }
+
+        /** Seccion utilizada unicamente para dar forma de diamante al hueco entre el fab y el bottomAppBar **/
+        val topEdge = BottomAppBarCutCornersTopEdge(
+            binding.babMain.fabCradleMargin,
+            binding.babMain.fabCradleRoundedCornerRadius,
+            binding.babMain.cradleVerticalOffset
+        )
+
+        val materialShapeDrawable = binding.babMain.background as MaterialShapeDrawable
+        materialShapeDrawable.shapeAppearanceModel = materialShapeDrawable
+            .shapeAppearanceModel
+            .toBuilder()
+            .setTopEdge(topEdge)
+            .build()
+        /** **/
     }
 
     companion object {
